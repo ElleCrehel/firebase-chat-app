@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yet another Chat</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+      <main>
+       
+        <div class="login">
+          <div class="chat-name">
+            <h1>Linkley</h1>
+          </div>
+          <h2>Login to your account</h2>
+          <div class="login-form">
+            <form class="loginForm">
+              <label for="email">Email:</label>
+              <input placeholder="Email "type="email" class="email" name="email" /><br />
+             
+              <label for="password">Password:</label>
+              <input placeholder="Password"  type="text" class="password" name="password" /><br />
+              <div class="divWrongEmailOrPass"></div>
+              <button class="login-button">Log in</button>
+            </form>
+          </div>
+         
+          <div class="login-google">
+            <button class="google-logo">Continue with google</button>
+          </div>
+          <div class="login-register">
+            <p>Don't have an account?</p>
+            <button class="login-register__register-button">Register here</button>
+          </div>
+        </div>
+      
+
+        <div class="registerPage hidden">
+          <div class="chat-name">
+            <h1>Linkley</h1>
+          </div>
+          <h2>Register</h2>
+          <div class="register__register-form">
+            <form class="register">
+              <label for="email">Email:</label>
+              <input placeholder="Email "type="email" class="email" name="email" /><br />
+              <div class="error-message"></div>
+              <label for="password">Password:</label>
+              <input placeholder="Password"  type="text" class="password" name="password" /><br />
+              <button class="register-button">Register</button>
+            </form>
+          </div>
+         
+          <div class="register-google">
+            <button class="google-logo">Continue with google</button>
+          </div>
+          <div class="register-login">
+            <p>Already have an account?</p>
+            <button class="register-login__login-button">Login here</button>
+          </div>
+        </div>
+
+        <div class="logged-in hidden">
+          <button class="logout-button">Log out</button>
+          
+          <!--Chatrooms-->
+          <div class="headerloggedin"> 
+          <h1 class="chatrooms">Chatrooms</h1>
+         
+        </div>
+          <!--Add a chatroom-->
+          <div class="groups" id="groups"></div>
+         
+          
+          <form class="add">
+          <p>ADD NEW CHATROOM</p>
+          <label for="chatname">How do you want to name your chat?</label>
+          <input type="text" name="chatname" required>
+          
+
+          <button>NEW CHAT ROOM</button>
+          
+
+          </form>
+          
+          <form class="delete">
+            <p>DELETE A CHATROOM</p>
+            <label for="id">Document id:</label> 
+            <input type="text" name="id" required>
+            <button>DELETE A CHAT ROOM</button>
+          </form>
+           
+            </div> 
+       
+            <div class="messages hidden">
+              
+              <div class="showMessages">
+                <button class="logout-button">Log out</button>
+                <form class="addMessage"> 
+                  <label for="message"></label>
+                  <input type="text" name="message" required>
+                <button>SEND</button>
+                </form>
+
+              </div>
+            </div>
+        </div>
+        </div>
+      </main>
+    
+    <script type="module" src="./app/app.ts"></script>
+    
+  </body>
+</html>

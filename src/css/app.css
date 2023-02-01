@@ -1,0 +1,173 @@
+body {
+    font-family: var(--text--normal);
+    background-color: var(--black--lighter);
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    color: var(--white);
+}
+
+.chat-name {
+    color: var(--cyaan);
+    font-weight: 500;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.loginForm,
+.register {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 500;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.loginForm__login-form {
+    font-size: 15px;
+
+}
+
+.login-register p,
+.register-login p {
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+}
+
+.email,
+.password {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border-style: none;
+}
+
+.login-button,
+.register-button {
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: var(--cyaan);
+    border: none;
+    border-radius: 4px;
+    color: var(--white);
+    font-weight: 700;
+
+}
+
+.google-logo {
+    align-items: center;
+    justify-content: center;
+    padding-left: -50px;
+    background-position: 10px 10px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 63px;
+    border-radius: 4px;
+    border: 2px solid var(--white);
+    background-color: var(--black--lighter);
+    color: var(--white);
+}
+
+.login-register {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-register__register-button,
+.register-login__login-button {
+    color: var(--cyaan);
+    font-weight: 700;
+    background-color: var(--black--lighter);
+    border: 2px solid var(--black--lighter);
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.msg-span {
+    color: var(--white);
+}
+
+.logged-in p {
+    color: var(--white);
+}
+
+.logged-in .chatrooms {
+    color: var(--cyaan);
+    font-weight: 500;
+    font-size: 40px;
+    margin: 0;
+}
+
+.headerloggedin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout-button {
+    width: 65px;
+    height: 50px;
+    background-color: var(--black--lighter);
+    color: var(--white);
+    border: none;
+    display: flex;
+    margin: 0;
+
+}
+
+.add, .delete {
+    color: var(--white);
+}
+
+.groups {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oneGroup {
+    background-color: var(--cyaan);
+    height: 100px;
+    width: 300px;
+    margin: 10px;
+    border: none;
+}
+
+.error-messages,.wrong-email-or-pass {
+    color: var(--error--red);
+  }
+
+
+
+.message {
+    color: var(--cyaan);
+    display: flex;
+    justify-content: end;
+    margin-bottom: -30px;
+}

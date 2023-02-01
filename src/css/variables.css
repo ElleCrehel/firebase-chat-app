@@ -1,0 +1,11 @@
+:root {
+    --black: #000000;
+    --black--lighter:#201E1F;
+    --grey:#707070;
+    --white: #FFFFFF;
+    --cyaan:#50B2C0;
+    --error--red:#f00c0c;
+    
+    --text--normal: 'Roboto', sans-serif;
+
+}
